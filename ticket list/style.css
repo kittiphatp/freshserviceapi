@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Debug */
+/* * {
+    border: 1px solid #000;
+} */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Comfortaa';
+    font-size: 12px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header {
+    width: 80%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    width: 95%;
+    height: 80%;
+    display: flex;
+}
+
+header button {
+    margin-bottom: 8px;
+    border-style: none;
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #06e580;
+    color: #fff;
+    cursor: pointer;
+}
+header button:hover {
+    background-color: #e5d406;
+}
+
+main .datafill {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* card design */
+.card {
+    margin: 10px;
+    width: 320px;
+    height: 120px;
+    box-shadow: 3px 4px 5px 0px #ddd;
+    border-radius: 5px;
+}
+.card .topic,
+.card .sub-topic,
+.card .detail,
+.card .footer {
+    padding: 4px;
+}
+.card .topic {
+    width: 100%;
+    height: 20px;
+    background-color: #006adb;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card .sub-topic {
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+}
+.card .detail {
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+}
+.card .footer {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card .footer div > span {
+    font-weight: 800;
+}

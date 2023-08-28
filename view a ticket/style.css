@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Debug */
+/* * {
+    border: 1px solid #000;
+} */
+
+* {
+    font-family: 'Comfortaa';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    width: 50%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header > * {
+    margin-bottom: 10px;
+}
+header .topic {
+    font-weight: 700;
+}
+header input {
+    height: 30px;
+    text-align: center;
+}
+main {
+    width: 60%;
+    height: 60%;
+}
+main .main-topic {
+    font-weight: 800;
+}
+
+button {
+    border-style: none;
+    padding: 10px;
+    width: 200px;
+    color: #fff;
+    background-color: #06e580;
+    cursor: pointer;
+    transition: background-color 2s;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #e5d406;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.grid-container > .grid-topic {
+    font-weight: 800;
+    background-color: aquamarine;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+.grid-item {
+    padding: 5px;
+    font-size: 12px;
+    border: 1px solid #ddd;
+}
+.odd {
+    background-color: #fafafa;
+}
